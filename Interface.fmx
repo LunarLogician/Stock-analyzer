@@ -1,0 +1,100 @@
+object MyInterfaceForm: TMyInterfaceForm
+  Left = 0
+  Top = 0
+  Caption = 'Interface'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object NameLabel: TLabel
+    Position.X = 480.000000000000000000
+    Position.Y = 56.000000000000000000
+    Text = 'NameLabel'
+    TabOrder = 0
+  end
+  object AgeLabel: TLabel
+    Position.X = 480.000000000000000000
+    Position.Y = 96.000000000000000000
+    Text = 'AgeLabel'
+    TabOrder = 1
+  end
+  object UsernameLabel: TLabel
+    Position.X = 456.000000000000000000
+    Position.Y = 136.000000000000000000
+    Size.Width = 161.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Username'
+    TabOrder = 2
+  end
+  object LogoutButton: TButton
+    Position.X = 480.000000000000000000
+    Position.Y = 275.000000000000000000
+    TabOrder = 3
+    Text = 'Logout'
+    TextSettings.Trimming = None
+  end
+  object BalanceLabel: TLabel
+    Position.X = 456.000000000000000000
+    Position.Y = 177.000000000000000000
+    Size.Width = 176.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Balance'
+    TabOrder = 4
+  end
+  object StockLabel: TLabel
+    Position.X = 456.000000000000000000
+    Position.Y = 216.000000000000000000
+    Size.Width = 176.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Stock'
+    TabOrder = 5
+  end
+  object BuyButton: TButton
+    Position.X = 88.000000000000000000
+    Position.Y = 376.000000000000000000
+    TabOrder = 6
+    Text = 'Buy'
+    TextSettings.Trimming = None
+    OnClick = BuyButtonClick
+  end
+  object SellButton: TButton
+    Position.X = 288.000000000000000000
+    Position.Y = 376.000000000000000000
+    TabOrder = 7
+    Text = 'Sell'
+    TextSettings.Trimming = None
+    OnClick = SellButtonClick
+  end
+  object ChartStocks: TChart
+    Position.X = 40.000000000000000000
+    Position.Y = 47.000000000000000000
+    Foot.Font.StyleExt = {00040000000200000004000000}
+    Legend.Title.Font.StyleExt = {00070000000000000004000000}
+    SubFoot.Font.StyleExt = {00040000000200000004000000}
+    Title.Text.Strings = (
+      'TChart')
+    Zoom.Brush.Kind = None
+    Zoom.Pen.Fill.Color = claSilver
+    TabOrder = 8
+    Size.Width = 400.000000000000000000
+    Size.Height = 250.000000000000000000
+    Size.PlatformDefault = False
+    ColorPaletteIndex = 13
+    object ChartEdit: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 0
+      Position.X = 280.000000000000000000
+      Position.Y = 299.000000000000000000
+    end
+  end
+  object StockListBox: TComboBox
+    Position.X = 480.000000000000000000
+    Position.Y = 336.000000000000000000
+    TabOrder = 9
+  end
+end
